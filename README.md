@@ -20,6 +20,8 @@ A Python Monte Carlo simulation showing how **hedging frequency** and **transact
 1. **Without costs, risk shrinks roughly with the square root of hedge count.** Going from 12 to 252 hedges cuts P&L standard deviation by about 78%.
 2. **With costs, hedging more has diminishing returns.** Average cost drag grows from $0.22 to $0.61 per option, and tail-risk improvement (CVaR) flattens between 63 and 252 hedges (1.48 vs 1.36).
 3. **There is an optimal hedging frequency** that balances risk reduction against trading costs. This is the problem deep hedging (neural-network approaches) tries to solve better.
+4. ![Risk vs hedging frequency](plot1_risk_vs_frequency.png)
+![P&L distribution](plot2_pnl_distribution.png)
 
 ## Run it
 `pip install numpy scipy matplotlib`, then `python hedge.py`. Or open `delta_hedging.ipynb` in Google Colab.
